@@ -5,7 +5,7 @@
     </span>
     <div class="d-flex home mb-3 p-3 rounded">
       <blockquote>
-        <cite>You</cite>
+        <cite class="text-success">You</cite>
         <p>
           <% if @question.blank? %>
             😶
@@ -17,8 +17,9 @@
     </div>
     <div class="d-flex home p-3 rounded">
       <blockquote class="coach">
-        <cite>Your coach</cite>
-        <p>  <% @answer %></p>
+        <cite class="text-success">Your coach</cite>
+        <p>
+          <%= @answer %></p>
       </blockquote>
     </div>
   </div>
