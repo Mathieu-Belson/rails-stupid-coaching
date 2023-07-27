@@ -1,13 +1,19 @@
+<%# <script>
+  function showLoadingSpinner() {
+    $(".loading-spinner").css("display", "inline-block"); // Show the spinner
+  }
+</script> %>
 <div class="container col-12 col-md-6 justify-content-center">
   <div class="row">
     <span class="mt-3 mb-5 text-center">
       <h1 class="title">DUMB COACH</h1>
       <p class="subtitle">Ask your coach anything about fitness!</p>
     </span>
-    <form action="/chat" method="post">
+    <form action="/chat" method="post" <%# onsubmit="showLoadingSpinner()"%>>
       <div class="input-group">
         <input type="text" name="question" class="form-control italic-placeholder" placeholder="Ex: How can I lose weight quickly?">
         <input type="submit" value="Chat" class="btn btn-dark">
+        <%# <div class="loading-spinner"></div> %>
       </div>
     </form>
   </div>

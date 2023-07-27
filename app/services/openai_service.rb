@@ -9,7 +9,7 @@ class OpenaiService
   end
 
   def call
-    r = client.chat(
+    response = client.chat(
       parameters: {
           model: "gpt-3.5-turbo", # Required.
           messages: [
@@ -21,6 +21,6 @@ class OpenaiService
 					max_tokens: 100 # might want to check this
       })
     # you might want to inspect the response and see what the api is giving you
-    return r["choices"][0]["message"]["content"]
+    return response["choices"][0]["message"]["content"]
   end
 end
