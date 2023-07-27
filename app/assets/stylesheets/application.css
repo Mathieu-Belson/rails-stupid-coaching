@@ -18,5 +18,31 @@
 }
 
 .background-app {
-  background-color: #ffeece;
+  /*background-color: #ffeece; */
+  background: linear-gradient(45deg, bisque 25%, transparent 25%), linear-gradient(315deg, bisque 25%, transparent 25%),linear-gradient(45deg, transparent 24%,#157347 25%, #157347 45%, transparent 45%), linear-gradient(315deg, transparent 24%,#157347 25%, #157347 45%, transparent 45%);
+        background-size: 12em 12em;
+        background-color: bisque;
+        opacity: 1
 }
+
+.italic-placeholder::placeholder {
+  font-style: italic;
+}
+
+.title {
+  font-size: 6em;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: #157347 2px 5px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: #000000;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #a8b7a8;
+  }
+
+  .button {
+    color: #074b80;
+  }
